@@ -3,6 +3,11 @@ import styled from 'styled-components';
 
 import {boxShadow, centeredColumn, centeredRow} from '../styles/shared-styles';
 
+export const Row = styled.div({
+    display: 'flex',
+    flexDirection: 'row'
+});
+
 export const CenteredRow = styled.div({
     ...centeredRow
 });
@@ -10,7 +15,7 @@ export const CenteredRow = styled.div({
 export const SpacedRow = styled.div({
     ...centeredRow,
     alignItems: 'flex-start',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-between'
 });
 
 export const CenteredColumn = styled.div({
@@ -81,7 +86,7 @@ export const TextWrapper = styled.div({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     margin: 16,
-    width: 400
+    width: 500
 });
 
 export const Selectable = styled.a({
