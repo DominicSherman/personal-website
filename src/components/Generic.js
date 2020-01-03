@@ -10,8 +10,7 @@ export const CenteredRow = styled.div({
 export const SpacedRow = styled.div({
     ...centeredRow,
     alignItems: 'flex-start',
-    justifyContent: 'space-between',
-    width: 1000
+    justifyContent: 'space-evenly'
 });
 
 export const CenteredColumn = styled.div({
@@ -25,27 +24,27 @@ export const Page = styled.div({
 });
 
 export const Title = styled.p({
-    fontFamily: 'Viga',
-    fontSize: 28,
+    fontSize: 32,
+    fontWeight: 800,
     paddingBottom: 2,
     paddingTop: 2
 });
 
 export const Subtitle = styled.p({
-    fontFamily: 'Merriweather Sans',
+    color: '#586069',
     fontSize: 21
 });
 
 const BodyTitleText = styled.p({
-    fontFamily: 'Viga',
-    fontSize: 21,
-    fontWeight: '600'
+    color: '#24292e',
+    fontSize: 25,
+    fontWeight: 600
 });
 
 export const BodyTitle = (props) =>
     <CenteredRow
         style={{
-            marginBottom: 4,
+            marginBottom: 16,
             width: '100%'
         }}
     >
@@ -54,9 +53,21 @@ export const BodyTitle = (props) =>
         </BodyTitleText>
     </CenteredRow>;
 
+export const TitleSmall = styled.p({
+    color: '#0366d6',
+    fontSize: 20,
+    fontWeight: 600,
+    marginBottom: 8
+});
+
 export const Body = styled.p({
-    fontFamily: 'Merriweather Sans',
-    fontSize: 16
+    color: '#586069',
+    fontSize: 18
+});
+
+export const Small = styled.p({
+    color: '#586069',
+    fontSize: 16,
 });
 
 export const Image = styled.img({
@@ -70,7 +81,12 @@ export const TextWrapper = styled.div({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     margin: 16,
-    width: 500
+    width: 400
+});
+
+export const Selectable = styled.a({
+
+    cursor: 'pointer'
 });
 
 export const ListItem = (props) =>

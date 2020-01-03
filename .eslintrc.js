@@ -9,6 +9,7 @@ module.exports = {
         'react/prefer-stateless-function': 0,
         'jest/consistent-test-it': 0,
         'camelcase': 0,
-        'import/exports-last': 0
+        'import/exports-last': 0,
+        'react/jsx-key': 0
     }
 };
