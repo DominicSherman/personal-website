@@ -5,6 +5,7 @@ export const GRAPHQL = 'GraphQL';
 export const NODEJS = 'Node JS';
 export const REACT_NATIVE = 'React Native';
 export const REACT = 'React';
+export const REDUX = 'Redux';
 export const TYPESCRIPT = 'TypeScript';
 
 export const LabelToIcon = {
@@ -15,5 +16,6 @@ export const LabelToIcon = {
     [NODEJS]: require('../assets/NodeJS.png'),
     [REACT]: require('../assets/React.png'),
     [REACT_NATIVE]: require('../assets/React.png'),
+    [REDUX]: require('../assets/Redux.png'),
     [TYPESCRIPT]: require('../assets/TypeScript.png')
 };

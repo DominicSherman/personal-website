@@ -9,10 +9,10 @@ const Icon = ({label}) =>
         alt={label}
         src={LabelToIcon[label]}
         style={{
-            height: 'auto',
+            height: 32,
             marginLeft: 4,
             marginRight: 4,
-            width: '15%'
+            width: 'auto'
         }}
     />;
 
@@ -21,7 +21,7 @@ export const ProjectLink = (project) =>
         <TextWrapper>
             <TitleSmall>{project.title}</TitleSmall>
             <Small>{project.subTitle}</Small>
-            <Row>
+            <Row style={{marginTop: 12}}>
                 {project.labels.map((label) => <Icon label={label} />)}
             </Row>
         </TextWrapper>

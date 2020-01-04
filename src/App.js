@@ -32,6 +32,7 @@ const App = () =>
                         <ListItem>{'NodeJS'}</ListItem>
                         <ListItem>{'GraphQL'}</ListItem>
                         <ListItem>{'Apollo Client'}</ListItem>
+                        <ListItem>{'Redux'}</ListItem>
                     </ul>
                 </TextWrapper>
             </TextWrapper>
