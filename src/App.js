@@ -5,8 +5,20 @@ import {intro} from './constants/intro';
 import Headshot from './assets/Headshot.jpg';
 import {ProjectLink} from './components/ProjectLink';
 import {projects} from './constants/projects';
-import {APOLLO_CLIENT, GRAPHQL, JAVASCRIPT, NODEJS, REACT_NATIVE, REDUX, TYPESCRIPT} from './constants/icons';
+import {
+    APOLLO_CLIENT,
+    FIREBASE,
+    GRAPHQL,
+    JAVASCRIPT,
+    JEST,
+    NODEJS,
+    REACT_NATIVE,
+    REDUX,
+    TYPESCRIPT
+} from './constants/icons';
 import {Skill} from './components/Skill';
+import {ExperienceItem} from './components/ExperienceItem';
+import {experiences} from './constants/experience';
 
 const App = () =>
     <Page>
@@ -33,15 +45,18 @@ const App = () =>
                     <Skill label={GRAPHQL}>{'GraphQL'}</Skill>
                     <Skill label={APOLLO_CLIENT}>{'Apollo Client'}</Skill>
                     <Skill label={NODEJS}>{'NodeJS'}</Skill>
+                    <Skill label={JEST}>{'Jest'}</Skill>
                     <Skill label={REDUX}>{'Redux'}</Skill>
+                    <Skill label={FIREBASE}>{'Firebase'}</Skill>
                 </TextWrapper>
+            </TextWrapper>
+            <TextWrapper>
+                <BodyTitle>{'Experience'}</BodyTitle>
+                {experiences.map((experience) => <ExperienceItem {...experience} />)}
             </TextWrapper>
             <TextWrapper>
                 <BodyTitle>{'Projects'}</BodyTitle>
                 {projects.map((project) => <ProjectLink {...project} />)}
-            </TextWrapper>
-            <TextWrapper>
-                <BodyTitle>{'Timeline'}</BodyTitle>
             </TextWrapper>
         </SpacedRow>
     </Page>;

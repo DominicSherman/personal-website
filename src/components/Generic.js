@@ -2,11 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {boxShadow, centeredColumn, centeredRow} from '../styles/shared-styles';
+import {colors} from '../constants/colors';
 
 export const Row = styled.div({
     alignItems: 'center',
     display: 'flex',
     flexDirection: 'row'
+});
+
+export const Column = styled.div({
+    alignItems: 'flex-start',
+    display: 'flex',
+    flexDirection: 'column'
 });
 
 export const CenteredRow = styled.div({
@@ -17,10 +24,6 @@ export const SpacedRow = styled.div({
     ...centeredRow,
     alignItems: 'flex-start',
     justifyContent: 'space-between'
-});
-
-export const CenteredColumn = styled.div({
-    ...centeredColumn
 });
 
 export const Page = styled.div({
@@ -37,12 +40,12 @@ export const Title = styled.p({
 });
 
 export const Subtitle = styled.p({
-    color: '#586069',
+    color: colors.gray,
     fontSize: 21
 });
 
 const BodyTitleText = styled.p({
-    color: '#24292e',
+    color: colors.black,
     fontSize: 25,
     fontWeight: 600
 });
@@ -60,24 +63,22 @@ export const BodyTitle = (props) =>
     </CenteredRow>;
 
 export const TitleSmall = styled.p({
-    color: '#0366d6',
     fontSize: 20,
     fontWeight: 600,
     marginBottom: 8
 });
 
 export const Body = styled.p({
-    color: '#586069',
+    color: colors.gray,
     fontSize: 18
 });
 
 export const Small = styled.p({
-    color: '#586069',
+    color: colors.gray,
     fontSize: 16
 });
 
 export const Image = styled.img({
-    borderRadius: 10,
     boxShadow
 });
 

@@ -3,6 +3,7 @@ export const EXPRESS = 'Express';
 export const FIREBASE = 'Firebase';
 export const GRAPHQL = 'GraphQL';
 export const JAVASCRIPT = 'JavaScript';
+export const JEST = 'Jest';
 export const NODEJS = 'Node JS';
 export const REACT_NATIVE = 'React Native';
 export const REACT = 'React';
@@ -15,6 +16,7 @@ export const LabelToIcon = {
     [FIREBASE]: require('../assets/Firebase.png'),
     [GRAPHQL]: require('../assets/GraphQL.png'),
     [JAVASCRIPT]: require('../assets/Javascript.svg'),
+    [JEST]: require('../assets/Jest.png'),
     [NODEJS]: require('../assets/NodeJS.png'),
     [REACT]: require('../assets/React.png'),
     [REACT_NATIVE]: require('../assets/React.png'),
