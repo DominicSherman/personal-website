@@ -5,6 +5,7 @@ import {intro} from './constants/intro';
 import Headshot from './assets/Headshot.jpg';
 import {ProjectLink} from './components/ProjectLink';
 import {projects} from './constants/projects';
+import {APOLLO_CLIENT, GRAPHQL, JAVASCRIPT, NODEJS, REACT, REACT_NATIVE, REDUX, TYPESCRIPT} from './constants/icons';
 
 const App = () =>
     <Page>
@@ -24,16 +25,13 @@ const App = () =>
                 <Body>{intro}</Body>
                 <TextWrapper>
                     <BodyTitle>{'Preferred Tools'}</BodyTitle>
-                    <ul style={{marginLeft: 20}}>
-                        <ListItem>{'JavaScript'}</ListItem>
-                        <ListItem>{'TypeScript'}</ListItem>
-                        <ListItem>{'React'}</ListItem>
-                        <ListItem>{'React-Native'}</ListItem>
-                        <ListItem>{'NodeJS'}</ListItem>
-                        <ListItem>{'GraphQL'}</ListItem>
-                        <ListItem>{'Apollo Client'}</ListItem>
-                        <ListItem>{'Redux'}</ListItem>
-                    </ul>
+                    <ListItem label={JAVASCRIPT}>{'JavaScript'}</ListItem>
+                    <ListItem label={TYPESCRIPT}>{'TypeScript'}</ListItem>
+                    <ListItem label={REACT_NATIVE}>{'React-Native'}</ListItem>
+                    <ListItem label={NODEJS}>{'NodeJS'}</ListItem>
+                    <ListItem label={GRAPHQL}>{'GraphQL'}</ListItem>
+                    <ListItem label={APOLLO_CLIENT}>{'Apollo Client'}</ListItem>
+                    <ListItem label={REDUX}>{'Redux'}</ListItem>
                 </TextWrapper>
             </TextWrapper>
             <TextWrapper>

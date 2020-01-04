@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 import {boxShadow, centeredColumn, centeredRow} from '../styles/shared-styles';
 
+import {Icon} from './Icon';
+
 export const Row = styled.div({
+    alignItems: 'center',
     display: 'flex',
     flexDirection: 'row'
 });
@@ -72,7 +75,7 @@ export const Body = styled.p({
 
 export const Small = styled.p({
     color: '#586069',
-    fontSize: 16,
+    fontSize: 16
 });
 
 export const Image = styled.img({
@@ -95,6 +98,15 @@ export const Selectable = styled.a({
 });
 
 export const ListItem = (props) =>
-    <li style={{margin: 4}}>
+    <Row
+        style={{
+            justifyContent: 'space-between',
+            marginTop: 4,
+            width: 150
+        }}
+    >
         <Body>{props.children}</Body>
-    </li>;
+        <Icon
+            label={props.label}
+        />
+    </Row>;
