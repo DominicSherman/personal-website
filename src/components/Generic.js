@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 import {boxShadow, centeredColumn, centeredRow} from '../styles/shared-styles';
 
-import {Icon} from './Icon';
-
 export const Row = styled.div({
     alignItems: 'center',
     display: 'flex',
@@ -89,24 +87,9 @@ export const TextWrapper = styled.div({
     flexDirection: 'column',
     justifyContent: 'flex-start',
     margin: 16,
-    width: 500
+    width: 400
 });
 
 export const Selectable = styled.a({
-
     cursor: 'pointer'
 });
-
-export const ListItem = (props) =>
-    <Row
-        style={{
-            justifyContent: 'space-between',
-            marginTop: 4,
-            width: 150
-        }}
-    >
-        <Body>{props.children}</Body>
-        <Icon
-            label={props.label}
-        />
-    </Row>;

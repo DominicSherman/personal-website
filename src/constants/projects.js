@@ -14,28 +14,16 @@ export const projects = [
         title: 'easy-budget-api'
     },
     {
-        labels: [REACT],
-        link: 'https://github.com/DominicSherman/shermanos-dev',
-        subTitle: 'Sherman brothers portfolio website',
-        title: 'shermanos-dev'
+        labels: [REACT_NATIVE, REDUX],
+        link: 'https://github.com/DominicSherman/spades',
+        subTitle: 'A mobile application for keeping score in Spades',
+        title: 'spades'
     },
     {
         labels: [REACT, NODEJS, EXPRESS, FIREBASE],
         link: 'https://github.com/DominicSherman/drake-capstone',
         subTitle: 'Influence analytics web application and authentication server',
         title: 'drake-capstone'
-    },
-    {
-        labels: [REACT],
-        link: 'https://github.com/DominicSherman/moss-rock-landscaping',
-        subTitle: 'A web application for Moss Rock Landscaping company',
-        title: 'moss-rock-landscaping'
-    },
-    {
-        labels: [REACT_NATIVE, REDUX],
-        link: 'https://github.com/DominicSherman/spades',
-        subTitle: 'A mobile application for keeping score in Spades',
-        title: 'spades'
     },
     {
         labels: [NODEJS, EXPRESS, FIREBASE],
@@ -54,5 +42,17 @@ export const projects = [
         link: 'https://github.com/DominicSherman/photo-application',
         subTitle: 'A mobile application for uploading photos to a server',
         title: 'photo-application'
+    },
+    {
+        labels: [REACT],
+        link: 'https://github.com/DominicSherman/shermanos-dev',
+        subTitle: 'Sherman brothers portfolio website',
+        title: 'shermanos-dev'
+    },
+    {
+        labels: [REACT],
+        link: 'https://github.com/DominicSherman/moss-rock-landscaping',
+        subTitle: 'A web application for Moss Rock Landscaping company',
+        title: 'moss-rock-landscaping'
     }
 ];
