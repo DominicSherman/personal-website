@@ -81,6 +81,10 @@ export const Image = styled.img({
     boxShadow
 });
 
+export const Icon = styled.img({
+
+});
+
 export const TextWrapper = styled.div({
     alignItems: 'flex-start',
     display: 'flex',

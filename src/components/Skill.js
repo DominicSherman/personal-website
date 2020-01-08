@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Icon} from './Icon';
+import {LabeledIcon} from './LabeledIcon';
 import {Body, Row} from './Generic';
 
 export const Skill = (props) =>
@@ -12,7 +12,7 @@ export const Skill = (props) =>
         }}
     >
         <Body>{props.children}</Body>
-        <Icon
+        <LabeledIcon
             label={props.label}
         />
     </Row>;

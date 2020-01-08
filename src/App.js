@@ -1,4 +1,5 @@
 import React from 'react';
+import {GitHub, Linkedin, Mail} from 'react-feather';
 
 import {Body, BodyTitle, Column, Image, Page, SpacedRow, Subtitle, TextWrapper, Title} from './components/Generic';
 import {intro} from './constants/intro';
@@ -20,6 +21,8 @@ import {Skill} from './components/Skill';
 import {ExperienceItem} from './components/ExperienceItem';
 import {experiences} from './constants/experience';
 import {colors} from './styles/colors';
+import {SelectableIcon} from './components/SelectableIcon';
+import {EMAIL_LINK, GITHUB_LINK, LINKED_IN_LINK} from './constants/urls';
 
 const App = () =>
     <Page>
@@ -42,6 +45,23 @@ const App = () =>
             />
             <Title style={{color: colors.white}}>{'Dominic Sherman'}</Title>
             <Subtitle style={{color: colors.white}}>{'Full-Stack Web & Mobile Developer'}</Subtitle>
+            <SpacedRow style={{marginTop: 32}}>
+                <SelectableIcon
+                    ComponentType={GitHub}
+                    href={GITHUB_LINK}
+                    label={'Github'}
+                />
+                <SelectableIcon
+                    ComponentType={Linkedin}
+                    href={LINKED_IN_LINK}
+                    label={'LinkedIn'}
+                />
+                <SelectableIcon
+                    ComponentType={Mail}
+                    href={EMAIL_LINK}
+                    label={'Email'}
+                />
+            </SpacedRow>
         </Column>
         <SpacedRow style={{marginTop: 32}}>
             <TextWrapper style={{alignItems: 'center'}}>

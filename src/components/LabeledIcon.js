@@ -2,7 +2,7 @@ import React from 'react';
 
 import {LabelToIcon} from '../constants/icons';
 
-export const Icon = ({label}) =>
+export const LabeledIcon = ({label}) =>
     <img
         alt={label}
         src={LabelToIcon[label]}
