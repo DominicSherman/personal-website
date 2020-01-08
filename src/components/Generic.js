@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {boxShadow, centeredColumn, centeredRow} from '../styles/shared-styles';
-import {colors} from '../constants/colors';
+import {colors} from '../styles/colors';
 
 export const Row = styled.div({
     alignItems: 'center',
@@ -28,7 +28,6 @@ export const SpacedRow = styled.div({
 
 export const Page = styled.div({
     ...centeredColumn,
-    padding: 16,
     width: '100vw'
 });
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {colors} from '../constants/colors';
+import {colors} from '../styles/colors';
 
 import {Row, Selectable, Small, TitleSmall} from './Generic';
 import {Icon} from './Icon';

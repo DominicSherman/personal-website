@@ -1,4 +1,4 @@
-import {darkGrey, white} from './colors';
+import {colors} from './colors';
 
 const centered = {
     alignItems: 'center',
@@ -19,8 +19,8 @@ export const boxShadow = '0px 3px 6px #00000029';
 
 export const boxWrapper = {
     ...centeredColumn,
-    backgroundColor: white,
-    borderColor: darkGrey,
+    backgroundColor: colors.white,
+    borderColor: colors.darkGrey,
     borderWidth: 1,
     justifyContent: 'center',
     padding: '5%'

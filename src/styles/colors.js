@@ -1,9 +1,8 @@
-export const white = '#FFFFFF';
-export const backgroundGray = '#3A3939';
-export const black = '#000000';
-export const darkGrey = '#424345';
-export const mediumGray = '#E0E0E0';
-export const lightGrey = '#F8F8F8';
-export const blue = '#049BD7';
-export const yellow = '#FBD000';
-export const red = '#E52521';
+export const colors = {
+    black: '#24292e',
+    blue: '#0366d6',
+    darkGrey: '#424345',
+    gray: '#586069',
+    lightGray: '#C0D0D0',
+    white: '#FFFFFF'
+};

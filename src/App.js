@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Body, BodyTitle, Image, Page, SpacedRow, Subtitle, TextWrapper, Title} from './components/Generic';
+import {Body, BodyTitle, Column, Image, Page, SpacedRow, Subtitle, TextWrapper, Title} from './components/Generic';
 import {intro} from './constants/intro';
 import Headshot from './assets/Headshot.jpg';
 import {ProjectLink} from './components/ProjectLink';
@@ -19,19 +19,30 @@ import {
 import {Skill} from './components/Skill';
 import {ExperienceItem} from './components/ExperienceItem';
 import {experiences} from './constants/experience';
+import {colors} from './styles/colors';
 
 const App = () =>
     <Page>
-        <Image
-            src={Headshot}
+        <Column
             style={{
-                borderRadius: 400,
-                height: 'auto',
-                width: 150
+                alignItems: 'center',
+                background: `linear-gradient(${colors.lightGray}, ${colors.gray})`,
+                paddingBottom: 32,
+                paddingTop: 32,
+                width: '100%'
             }}
-        />
-        <Title>{'Dominic Sherman'}</Title>
-        <Subtitle>{'Full-Stack Web & Mobile Developer'}</Subtitle>
+        >
+            <Image
+                src={Headshot}
+                style={{
+                    borderRadius: 400,
+                    height: 'auto',
+                    width: 150
+                }}
+            />
+            <Title style={{color: colors.white}}>{'Dominic Sherman'}</Title>
+            <Subtitle style={{color: colors.white}}>{'Full-Stack Web & Mobile Developer'}</Subtitle>
+        </Column>
         <SpacedRow style={{marginTop: 32}}>
             <TextWrapper style={{alignItems: 'center'}}>
                 <BodyTitle>{'About Me'}</BodyTitle>
@@ -52,7 +63,7 @@ const App = () =>
             </TextWrapper>
             <TextWrapper>
                 <BodyTitle>{'Experience'}</BodyTitle>
-                {experiences.map((experience) => <ExperienceItem {...experience} />)}
+                {experiences.reverse().map((experience) => <ExperienceItem {...experience} />)}
             </TextWrapper>
             <TextWrapper>
                 <BodyTitle>{'Projects'}</BodyTitle>
