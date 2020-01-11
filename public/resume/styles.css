@@ -1,17 +1,50 @@
 @page {
-    size: 8.5in 11in;
-    margin: 0;
+    width: 595;
+    height: 842;
+}
+
+.wrapper {
+    width: 595;
+    height: 842;
 }
 
 body {
     margin: 0;
 }
 
-p {
+p, b {
     margin: 0;
-    font-size: 14;
+    font-size: 12;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.experienceRow {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 8;
+}
+
+.leftExperienceWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 16;
+    width: 15vw;
+}
+.rightExperienceWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 45vw;
 }
 
 .centeredColumn {
@@ -25,6 +58,14 @@ p {
 .centeredRow {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.spacedRow {
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
@@ -45,8 +86,8 @@ p {
     background-color: #333333;
     display: flex;
     flex-direction: column;
-    height: 97vh;
-    width: 35%;
+    min-height: 97vh;
+    width: 25vw;
     padding: 16;
 }
 
@@ -62,14 +103,15 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 65%;
+    width: 75vw;
     padding: 16;
 }
 
 .title {
+    letter-spacing: 0.5mm;
     font-family: 'Oswald', sans-serif;
-    font-size: 50;
-    font-weight: 600;
+    font-size: 45;
+    font-weight: 500;
 }
 
 .subTitle {
@@ -81,10 +123,46 @@ p {
 .smallTitleWhite {
     color: white;
     font-family: 'Oswald', sans-serif;
-    font-size: 25;
-    font-weight: 500;
+    font-size: 22;
+    font-weight: 400;
 }
 
 .white {
     color: white;
+    font-size: 16;
+}
+
+.whiteSmall {
+    color: white;
+    font-size: 12;
+}
+
+.skillText {
+    color: white;
+    font-size: 18;
+    margin-top: 8;
+    margin-bottom: 8;
+}
+
+.hrWhite {
+    width: 100%;
+    margin-bottom: 8;
+    border: 1px solid white;
+}
+
+.hrBlack {
+    width: 100%;
+    margin-bottom: 8;
+    border: 1px solid black;
+}
+
+.experienceHeaderText {
+    font-size: 16;
+    margin-top: 4;
+    margin-bottom: 4;
+}
+
+.experienceBodyText {
+    margin-top: 4;
+    margin-bottom: 4;
 }
