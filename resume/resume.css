@@ -1,71 +1,90 @@
-p {
+@page {
+    size: 8.5in 11in;
     margin: 0;
-    font-size: 18;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
-    font-weight: 200;
 }
 
-.wrapper {
-    width: 100vw;
-    height: 100vh;
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 14;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.centeredColumn {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    color: black;
+    flex-direction: column;
+    width: 100%;
 }
 
-.resume {
+.centeredRow {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: row;
-    border: 1px solid black;
+    width: 100%;
+}
+
+.image {
+    height: auto;
+    width: 20vw;
+    border-radius: 100%;
+}
+
+.icon {
+    width: 35;
+    margin-right: 8;
 }
 
 .leftSide {
-    background-color: #003A6F;
+    background-color: #333333;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 300;
+    height: 97vh;
+    width: 35%;
+    padding: 16;
 }
 
-.smallWrapper {
-    padding: 4%;
-}
-
-.titleWhite {
-    color: white;
-    font-size: 26;
-    font-weight: 600;
-}
-
-.subTextWhite {
-    color: white;
-    font-size: 18;
-    padding-top: 4;
-}
-
-.smallTitleWrapper {
+.contactInfoItemWrapper {
     margin-top: 8;
     margin-bottom: 8;
-    padding-left: 4%;
-    padding-top: 4;
-    padding-bottom: 4;
-    background-color: #012B56;
-    width: 96%;
-    overflow: hidden;
-}
-
-.smallTitleWhite {
-    color: white;
-    font-size: 20;
-    font-weight: 600;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
 .rightSide {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
-    width: 700;
+    width: 65%;
     padding: 16;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50;
+    font-weight: 600;
+}
+
+.subTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28;
+    font-weight: 400;
+}
+
+.smallTitleWhite {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25;
+    font-weight: 500;
+}
+
+.white {
+    color: white;
 }
