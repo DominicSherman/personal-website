@@ -16,7 +16,7 @@ export const projects = [
     {
         labels: [REACT_NATIVE, REDUX, JEST],
         link: 'https://github.com/DominicSherman/spades',
-        subTitle: 'A mobile application for keeping score in Spades',
+        subTitle: 'A mobile application for keeping score in Spades, available on iOS and Android',
         title: 'spades'
     },
     {
